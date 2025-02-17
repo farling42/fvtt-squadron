@@ -1,51 +1,76 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "",
-  "version": "#{VERSION}#",
-  "library": "false",
-  "manifestPlusVersion": "1.2.0",
-  "compatibility": {
-    "minimum": 10,
-    "verified": 10,
-    "maximum": 11
-  },
-  "authors": [
-    {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
-    }
+    "title": "Squadron",
+    "id": "squadron",
+    "esmodules": [
+        "squadron.mjs"
+    ],
+    "styles": [
+        "squadron.css"
+    ],
+    "languages": [
+        {
+            "lang": "pt-BR",
+            "name": "Portuguese",
+            "path": "lang/pt-BR.json"
+        },
+        {
+            "lang": "ja",
+            "name": "Japanese",
+            "path": "lang/ja.json"
+        },
+        {
+            "lang": "fr",
+            "name": "French",
+            "path": "lang/fr.json"
+        },
+        {
+            "lang": "es",
+            "name": "Spanish",
+            "path": "lang/es.json"
+        },
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        },
+        {
+            "lang": "de",
+            "name": "German",
+            "path": "lang/de.json"
+        }
+    ],
+    "templates": [
+        "apps/Formation/template.hbs"
+    ],
+    "packs": [],
+    "packFolders": [],
+    "documentTypes": {},
+    "externals": [],
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12.331"
+    },
+    "relationships": {
+        "systems": [],
+        "modules": []
+    },
+    "description": "Quickly create marching orders or formations for your tokens. Easy jump in and out of your formation or halt others from following you.",
+    "version": "#{VERSION}#",
+    "authors": [
+        {
+            "name": "badgerwerks",
+            "url": "https://github.com/trioderegion"
+        },
+        {
+          "name": "Farling",
+          "url": "https://github.com/farling42"
+      }
   ],
-  "relationships": {
-    "systems": [],
-    "requires": []
-  },
-  "esmodules": [
-    "scripts/module.js"
-  ],
-  "scripts": [
-    "scripts/lib/lib.js"
-  ],
-  "styles": [
-    "styles/module.css"
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    }
-  ],
-  "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
-  "license": "LICENSE",
-  "readme": "README.md",
-  "media": [
-    {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
-    }
-  ]
+    "url": "#{URL}#",
+    "socket": true,
+    "manifest": "#{MANIFEST}#",
+    "download": "#{DOWNLOAD}#",
+    "license": "LICENSE",
+    "readme": "README.md",
+    "flags": {}
 }
